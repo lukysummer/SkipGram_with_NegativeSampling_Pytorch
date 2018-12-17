@@ -92,7 +92,7 @@ class SkipGram_NegSample_Model(nn.module):
     
     def __init__(self, n_vocab, n_embed, noise_dist = None):
         super().__init__()
-        self.n_vcab = n_vocab  # number of UNIQUE words in vocabulary
+        self.n_vocab = n_vocab  # number of UNIQUE words in vocabulary
         self.n_embed = n_embed  # embedding dimension
         self.noise_dist = noise_dist  # probability distribution to pick noise samples from vocabulary
         
