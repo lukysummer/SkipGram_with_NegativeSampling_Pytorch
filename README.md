@@ -18,7 +18,7 @@ Using **Negative Sampling**, the model tries to minimize the following **Loss Fu
 ## Repository 
 
 This repository contains:
-* **Skip_Grams_Negative_Sampling.py** : Complete code for implementing facie generation task using DCGAN
+* **Skip_Grams_Negative_Sampling.py** : Complete code for pre-processing and batching data, building the model, training the model, and visualizing the resulting word embeddings
 		
 		
 			
