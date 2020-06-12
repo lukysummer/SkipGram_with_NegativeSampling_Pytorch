@@ -1,6 +1,6 @@
-# Skip Grams with Negative Sampling in PyTorch
+# Skip-Gram Model with Negative Sampling in PyTorch
 
-This is my implementation of **Skip Grams**, which is trained to:
+This is my implementation of **Skip-Gram model**, which is trained to:
 
 1. Generate vector representations of words in vocabulary using **Word2Vec Embeddings**
 2. Using the embedded vectors, generate semantically similar words to a given input word,
