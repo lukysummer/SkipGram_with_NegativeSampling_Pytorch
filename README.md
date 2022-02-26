@@ -1,14 +1,10 @@
-# Skip-Gram Model with Negative Sampling in PyTorch
+# Skip-Gram with Negative Sampling (PyTorch)
 
-This is my implementation of **Skip-Gram model**, which is trained to:
+Mapping semantically similar words into closer locations in the embedding space.
 
-1. Generate vector representations of words in vocabulary using **Word2Vec Embeddings**
-2. Using the embedded vectors, generate semantically similar words to a given input word,
- by looking at the cosine distance between the input and all other words in the vocabulary
+## Loss:
    
-   
-   
-Using **Negative Sampling**, the model tries to minimize the following **Loss Function**:
+Using **Negative Sampling** (drawing random noise words to form incorrect target pairs), the model tries to minimize the following **Loss Function**:
 
 
 <img src = "loss_function.png">
@@ -24,18 +20,20 @@ This repository contains:
 			
 ## List of Hyperparameters used:
 
-* Batch Size = **512**
+* Number of Center Words in a Batch = **512**
+  * The actual **Batch Size** will vary, since there will be a varying number (in range [1, single_window_size]) of context words for each center word 
 * Threshold for Subsampling = **1e-5**  
-* Window Size for Context = **5**  
-* Embedding Dimension = **300**
-* Number of Negative (Noise) Samples = **5**
+* Single-side Window Size for Context = **5**  
+  * So the whole window contains 5*2+1 = 11 words
+* Embedding Dimension = **300** 
+* Number of Negative (Noise) Samples Per Center Word = **5**
 * Learning Rate = **0.003**
-* Number of Epochs = **5**
+* Number of Training Epochs = **5**
 
 
 
 ## Sources
 
-I referenced the following sources for building & debugging the final model :
+I referenced [Udacity](udacity.com) for building & debugging the final model :
 
 * https://github.com/udacity/deep-learning-v2-pytorch
