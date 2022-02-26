@@ -14,7 +14,9 @@ Using **Negative Sampling** (drawing random noise words to form incorrect target
 ## Repository 
 
 This repository contains:
-* **Skip_Grams_Negative_Sampling.py** : Complete code for pre-processing and batching data, building the model, training the model, and visualizing the resulting word embeddings
+* **Skip_Grams_Negative_Sampling.py** : Contains the complete source code for pre-processing and batching data, building the model, training the model, and visualizing the resulting word embeddings
+* * **util.py** : Contains utility functions for text pre-processing
+* data/**text8.txt** : Contains the training text 
 		
 		
 			
