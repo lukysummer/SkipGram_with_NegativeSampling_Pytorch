@@ -2,7 +2,7 @@
 
 Mapping semantically similar words into closer locations in the embedding space.
 
-## Loss:
+## Loss
    
 Using **Negative Sampling** (drawing random noise words to form incorrect target pairs), the model tries to minimize the following **Loss Function**:
 
@@ -11,7 +11,7 @@ Using **Negative Sampling** (drawing random noise words to form incorrect target
 
 
 
-## Repository 
+## Repository Contents
 
 This repository contains:
 * **Skip_Grams_Negative_Sampling.py** : Contains the complete source code for pre-processing and batching data, building the model, training the model, and visualizing the resulting word embeddings
@@ -20,7 +20,7 @@ This repository contains:
 		
 		
 			
-## List of Hyperparameters used:
+## List of Hyperparameters
 
 * Number of Center Words in a Batch = **512**
   * The actual **Batch Size** will vary, since there will be a varying number (in range [1, single_window_size]) of context words for each center word 
